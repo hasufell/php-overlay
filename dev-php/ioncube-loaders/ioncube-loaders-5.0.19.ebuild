@@ -12,9 +12,6 @@ USE_PHP="php5-4 php5-5 php5-6"
 
 inherit php-ext-source-r2
 
-MY_P="${PN}"
-MY_ARCH=${ARCH/amd64/x86-64}
-
 DESCRIPTION="PHP extension that support for running PHP scripts encoded with ionCube's encoder"
 HOMEPAGE="http://www.ioncube.com/"
 SRC_URI="
