@@ -33,7 +33,7 @@ src_install() {
 	doins -r bin dictionaries lib modules schemas config templates vendor www
 
 	insinto /etc/simplesamlphp
-	doins -r attributemap config/* "${FILESDIR}"/apache.conf
+	doins -r attributemap config templates "${FILESDIR}"/apache.conf
 
 	eshopts_push -s nullglob
 	local config_files=(
